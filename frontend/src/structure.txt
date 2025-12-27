@@ -1,0 +1,127 @@
+rabbit_hole_wiki/
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── app/                    # Инициализация, провайдеры, стили, роутинг
+│   │   │   ├── styles/             # Глобальные стили
+│   │   │   │   ├── globals.css
+│   │   │   │   ├── variables.css
+│   │   │   │   └── animations.css
+│   │   │   ├── providers/          # React провайдеры
+│   │   │   │   ├── index.tsx
+│   │   │   │   ├── theme-provider.tsx
+│   │   │   │   └── query-provider.tsx
+│   │   │   ├── router/             # Конфигурация роутера
+│   │   │   │   ├── index.tsx
+│   │   │   │   └── routes.tsx
+│   │   │   ├── store/              # Глобальный стейт (Zustand/Redux)
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── article-store.ts
+│   │   │   │   └── game-store.ts
+│   │   │   ├── App.tsx
+│   │   │   └── main.tsx
+│   │   │
+│   │   ├── pages/                  # Страницы (композиция фич)
+│   │   │   ├── article-explorer/   # Страница исследования статей
+│   │   │   │   ├── ui/
+│   │   │   │   └── index.tsx
+│   │   │   ├── game-bridge/        # Страница игры "Мост"
+│   │   │   │   ├── ui/
+│   │   │   │   └── index.tsx
+│   │   │   ├── user-profile/       # Страница профиля
+│   │   │   │   ├── ui/
+│   │   │   │   └── index.tsx
+│   │   │   ├── admin/              # Админка
+│   │   │   │   └── index.tsx
+│   │   │   └── not-found/          # 404 страница
+│   │   │       └── index.tsx
+│   │   │
+│   │   ├── widgets/                # Независимые композитные блоки
+│   │   │   ├── navigation-sidebar/ # Боковая панель навигации
+│   │   │   │   ├── ui/
+│   │   │   │   ├── model/
+│   │   │   │   └── index.ts
+│   │   │   ├── history-timeline/   # Таймлайн истории
+│   │   │   │   ├── ui/
+│   │   │   │   ├── model/
+│   │   │   │   └── index.ts
+│   │   │   ├── graph-visualizer/   # Визуализатор графа (главный виджет)
+│   │   │   │   ├── ui/
+│   │   │   │   ├── model/
+│   │   │   │   └── index.ts
+│   │   │   └── game-hud/           # Игровой HUD
+│   │   │       ├── ui/
+│   │   │       ├── model/
+│   │   │       └── index.ts
+│   │   │
+│   │   ├── features/               # Бизнес-фичи пользователя
+│   │   │   ├── article-navigation/ # Навигация по статьям
+│   │   │   │   ├── ui/
+│   │   │   │   ├── model/
+│   │   │   │   └── lib/
+│   │   │   ├── path-finding/       # Поиск путей
+│   │   │   │   ├── ui/
+│   │   │   │   ├── model/
+│   │   │   │   └── lib/
+│   │   │   ├── ai-suggestions/     # AI предложения
+│   │   │   │   ├── ui/
+│   │   │   │   ├── model/
+│   │   │   │   └── lib/
+│   │   │   ├── graph-interaction/  # Взаимодействие с графом
+│   │   │   │   ├── ui/
+│   │   │   │   ├── model/
+│   │   │   │   └── lib/
+│   │   │   └── user-progress/      # Прогресс пользователя
+│   │   │       ├── ui/
+│   │   │       ├── model/
+│   │   │       └── lib/
+│   │   │
+│   │   ├── entities/               # Бизнес-сущности
+│   │   │   ├── article/            # Статья
+│   │   │   │   ├── ui/
+│   │   │   │   ├── model/
+│   │   │   │   └── lib/
+│   │   │   ├── user/               # Пользователь
+│   │   │   │   ├── ui/
+│   │   │   │   ├── model/
+│   │   │   │   └── lib/
+│   │   │   ├── connection/         # Связь между статьями
+│   │   │   │   ├── ui/
+│   │   │   │   ├── model/
+│   │   │   │   └── lib/
+│   │   │   └── graph/              # Граф
+│   │   │       ├── ui/
+│   │   │       ├── model/
+│   │   │       └── lib/
+│   │   │
+│   │   ├── shared/                 # Переиспользуемый код
+│   │   │   ├── ui/                 # UI киты
+│   │   │   │   ├── button/
+│   │   │   │   ├── card/
+│   │   │   │   ├── modal/
+│   │   │   │   ├── input/
+│   │   │   │   └── typography/
+│   │   │   ├── lib/                # Утилиты, хелперы
+│   │   │   │   ├── api/
+│   │   │   │   ├── utils/
+│   │   │   │   ├── hooks/
+│   │   │   │   └── config/
+│   │   │   ├── config/             # Конфигурация
+│   │   │   │   ├── constants.ts
+│   │   │   │   └── routes.ts
+│   │   │   └── types/              # Типы TypeScript
+│   │   │       ├── article.ts
+│   │   │       ├── api.ts
+│   │   │       └── index.ts
+│   │   │
+│   │   └── index.css
+│   │
+│   ├── package.json
+│   ├── tsconfig.json
+│   ├── vite.config.ts              # или craco.config.js для CRA
+│   ├── .env
+│   ├── .eslintrc.js
+│   └── README.md
+│
+└── backend/  # (ваш Python бэкенд)
+
